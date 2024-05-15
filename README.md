@@ -35,7 +35,7 @@ It highlights my professional experience, projects I've worked on, skills I've a
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- Javascript
 
 ## Getting Started
 
