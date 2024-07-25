@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b76ed6eba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="services-page">
+      <div class="container">
+        <h1 class="title">My Services</h1>
+        <br />
+        <br />
+        <h2 class="sub-title">1. UI/UX Design and Accessibility</h2>
+        <br />
+        <span class="sub-title">
+          Crafting Intuitive, Accessible, and Engaging User Experiences</span
+        >
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      const openTab = (tabname) => {
+        for (link of tablinks) {
+          link.classList.remove("active-link");
+        }
+        for (content of tabcontents) {
+          content.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      };
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      const openmenu = () => {
+        sidemenu.style.right = "0";
+      };
+      const closemenu = () => {
+        sidemenu.style.right = "-200px";
+      };
+    </script>
+  </body>
+</html>
